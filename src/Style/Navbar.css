@@ -1,0 +1,11 @@
+#stack{
+    position: relative;
+    margin-top: -10px;
+    top: 10px;
+    background-color: bisque;
+}
+
+#title{
+    position: relative;
+    left: 27%;
+}

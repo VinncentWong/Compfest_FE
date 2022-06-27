@@ -1,13 +1,17 @@
-import { ButtonGroup } from "@mui/material";
 import Home from "./NavbarSubComponent/Home";
 import About from "./NavbarSubComponent/About";
+import ButtonLogin from "./NavbarSubComponent/BLogin";
+import { Stack } from "react-bootstrap";
+import '../Style/Navbar.css'
 
 const Navbar = () => {
     return(
-        <ButtonGroup >
-            <Home></Home>
+        <Stack direction = "horizontal" gap={2} id = "stack">
+            <Home className = "home" variant = "success">Home</Home>
             <About></About>
-        </ButtonGroup>
+            <h1 id = "title">SD SEA SENTOSA</h1>
+            <ButtonLogin className = "ms-auto" variant = "success">Login</ButtonLogin>
+        </Stack>
     );
 }
 

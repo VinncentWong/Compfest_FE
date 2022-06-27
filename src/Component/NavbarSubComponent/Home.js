@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
 
-const Home = () => {
+const Home = (props) => {
     return (
-        <Button variant = "success">Home</Button>
+        <Button className = {props.className} variant = {props.variant} active>Home</Button>
     )
 }
 
