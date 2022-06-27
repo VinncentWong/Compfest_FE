@@ -6,6 +6,22 @@
 }
 
 #title{
+    font-family: 'Times New Roman', Times, serif;
     position: relative;
     left: 27%;
+}
+
+#button-login{
+    position: relative;
+    right: 1%;
+}
+
+.home{
+    position: relative;
+    left: 1%;
+}
+
+.about{
+    position: relative;
+    left: 2%;
 }

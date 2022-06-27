@@ -8,9 +8,9 @@ const Navbar = () => {
     return(
         <Stack direction = "horizontal" gap={2} id = "stack">
             <Home className = "home" variant = "success">Home</Home>
-            <About></About>
-            <h1 id = "title">SD SEA SENTOSA</h1>
-            <ButtonLogin className = "ms-auto" variant = "success">Login</ButtonLogin>
+            <About className = "about" variant = "success"></About>
+            <h1 id = "title">Kantin Kejujuran</h1>
+            <ButtonLogin className = "ms-auto" variant = "success" id = "button-login">Login</ButtonLogin>
         </Stack>
     );
 }

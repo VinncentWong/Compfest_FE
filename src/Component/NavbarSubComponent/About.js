@@ -1,8 +1,8 @@
 import Button from "react-bootstrap/esm/Button";
 
-const About = () =>{
+const About = (props) =>{
     return(
-        <Button variant = "success" active>About</Button>
+        <Button variant = {props.variant} className = {props.className} active>About</Button>
     )
 }
 
