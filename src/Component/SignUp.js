@@ -1,22 +1,23 @@
 import axios from "axios";
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { useNavigate} from 'react-router-dom';
 
 const SignUp = () => {
     const [studentID, setStudentID] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const submitHandler = (event) => {
-        const response = axios.post("/login", {
-            studentID : studentID,
-            studentPassword : password
-        });
-        if(response == null || response == undefined){
+        event.preventDefault();
+        // const response = axios.post("/login", {
+        //     studentID : studentID,
+        //     studentPassword : password
+        // });
+        // if(response == null || response == undefined){
 
-        } 
-        response.then((result) => {
-            return result;
-        })
+        // } 
+        navigate("/");
     }
 
     const changeStudentIDHandler = (event) => {

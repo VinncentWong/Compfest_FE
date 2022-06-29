@@ -11,7 +11,7 @@
 
 .button-home{
     position: relative;
-    left: 80em;
+    left: 63em;
 }
 
 #signup-button{
@@ -30,4 +30,16 @@
 #form-login{
     position: relative;
     left: 1%;
+}
+
+#topic-navbar{
+    position: relative;
+    left: 1%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#image-people{
+    position: absolute;
+    left: 93%;
 }

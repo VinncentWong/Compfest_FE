@@ -1,11 +1,11 @@
+
 const Card = ({
-    className, source
+    className, source, id
 }) => {
-   return (
-        <div>
+    return (
+        <div id = {id} className = {className}>
             <img src={source} alt="Background" className = {className}></img>
         </div>
    ) 
 }
-
 export default Card;

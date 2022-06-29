@@ -1,12 +1,15 @@
+import NavbarHome from "../NavbarHome";
 import Card from "../Cards";
-import Navbar from "../Navbar";
+import { Image } from "react-bootstrap";
 
-const Home = () => {
+const Home = ({
+    id, username, profilePicture
+}) => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <Card source="https://i.pinimg.com/originals/44/35/82/4435827ac0c3903cc4e31a8ab5c3a1fd.jpg" className="card-home"></Card>
-        </div>
+        <>
+            <NavbarHome></NavbarHome>
+            <Card source="https://i.pinimg.com/originals/44/35/82/4435827ac0c3903cc4e31a8ab5c3a1fd.jpg" className="card-home" id = "home"></Card>
+        </>
     )
 }
 
