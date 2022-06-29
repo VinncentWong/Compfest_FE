@@ -6,7 +6,9 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
     return(
         <Stack direction = "horizontal" gap={2} className = "stack">
-            <BButton variant="primary" id = "signup-button" className = "button-home">Sign Up</BButton>
+            <Link to="/signup">
+                <BButton variant="primary" id = "signup-button" className = "button-home">Sign Up</BButton>
+            </Link>
             <Link to = "/login">
                 <BButton variant="secondary" id = "login-button" className = "button-home">Login</BButton>
             </Link>

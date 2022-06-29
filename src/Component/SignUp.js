@@ -2,8 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 
-const LoginPage = () => {
-
+const SignUp = () => {
     const [studentID, setStudentID] = useState('');
     const [password, setPassword] = useState('');
 
@@ -32,7 +31,7 @@ const LoginPage = () => {
 
     return (
         <div>
-            <h1 id = "login-page-title">Login page</h1>
+            <h1 id = "login-page-title">Registration page</h1>
             <Form onSubmit={submitHandler} id = "form-login">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Student ID</Form.Label>
@@ -53,4 +52,4 @@ const LoginPage = () => {
     )
 }
 
-export default LoginPage;
+export default SignUp;

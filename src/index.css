@@ -21,3 +21,13 @@
 #login-button{
     width: 90px;
 }
+
+#login-page-title{
+    position: relative;
+    left: 45%;
+}
+
+#form-login{
+    position: relative;
+    left: 1%;
+}
