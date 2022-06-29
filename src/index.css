@@ -1,5 +1,23 @@
-body{
-  background: url("./Asset/maxresdefault.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+.card-home{
+    object-fit: cover;
+    width: 100%;
+}
+
+.stack{
+    background-color: #00264D;
+    position: relative;
+    padding: 2%;
+}
+
+.button-home{
+    position: relative;
+    left: 80em;
+}
+
+#signup-button{
+    width: 90px;
+}
+
+#login-button{
+    width: 90px;
 }

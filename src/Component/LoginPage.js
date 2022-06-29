@@ -1,13 +1,13 @@
 import { Form, Button } from "react-bootstrap";
 
-const Login = () => {
+const LoginPage = () => {
     return (
         <Form>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Label>Student ID</Form.Label>
+                <Form.Control type="text" placeholder="Enter email" />
                 <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
+                We'll never share your Student ID with anyone else.
                 </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -24,4 +24,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default LoginPage;
