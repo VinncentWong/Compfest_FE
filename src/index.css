@@ -43,3 +43,29 @@
     position: absolute;
     left: 93%;
 }
+
+#label-search{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#search-form{
+    position: relative;
+    left: 20%;
+    bottom: 3px;
+}
+
+#userid-navbar{
+    position: absolute;
+    left: 87%;
+    bottom: 21px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word;
+}
+
+#additem-button{
+    position: relative;
+    left: 50em;
+    top: 5px;
+}

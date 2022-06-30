@@ -1,12 +1,11 @@
-import { Form } from "react-bootstrap";
-
 const Search = ({id}) => {
-    if(id !== null){
+    if(id !== null || id !== undefined){
         return (
-            <div id = "id">
-                <Form.Label htmlFor="form-control">Search</Form.Label>
-                <Form.Control type = "text" id = "form-control" aria-describedby="text-block"></Form.Control>
-                <Form.Text id = "text-block"></Form.Text>
+            <div id = {id}>
+                <label htmlFor="form-search" id = "label-search">Search</label>
+                <form>
+                    <input type = "search" id = "form-search"></input>
+                </form>
             </div>
         )
     }
