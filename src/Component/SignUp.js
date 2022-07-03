@@ -1,32 +1,71 @@
-import axios from "axios";
+import axios from "../Api/AxiosConfig"
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useNavigate} from 'react-router-dom';
+import React from "react";
 
 const SignUp = () => {
-    const [studentID, setStudentID] = useState('');
-    const [password, setPassword] = useState('');
+    const [studentID, setStudentID] = useState("");
+    const [password, setPassword] = useState("");
+
     const navigate = useNavigate();
 
     const submitHandler = (event) => {
         event.preventDefault();
-        // const response = axios.post("/login", {
-        //     studentID : studentID,
-        //     studentPassword : password
-        // });
-        // if(response == null || response == undefined){
+        if(studentID.length !== 5 || !validate()){
+            alert("ID tidak valid")
+            navigate("/");
+            return;
+        }
+        console.log("Validasi ID = " + validate());
+        console.log("Array length - 2 = " + studentID[studentID.length - 2]);
+        const response = axios.post("/registration", {
+            studentNumber : studentID,
+            password : password
+        });
+        response
+        .then((success) => {
+            alert("Sukses menyimpan data user!")
+            navigate("/")
+        })
+        .catch((error) => {
+            alert("Gagal menyimpan data user");
+            console.log(error.response.data);
+            console.log(error.response.header);
+            console.log(error.response.status);
+            navigate("/");
+        });
+    }
 
-        // } 
-        navigate("/");
+    const validate = () => {
+        let sum = 0;
+        for(let i = 0 ; i < 3 ; i++){
+            sum = sum + Number(studentID[i]);
+        }
+        if(Number(studentID[studentID.length - 2]) !== 0){
+            let sumBack = Number(studentID.substring(studentID.length-2));
+            console.log("Sumback = " + sumBack);
+            if(sum !== sumBack){
+                return false;
+            } else {
+                return true;
+            }
+        } else {
+            if(sum !== Number(studentID[studentID.length - 1])){
+                return false;
+            } else {
+                return true;
+            }
+        }
     }
 
     const changeStudentIDHandler = (event) => {
-        setStudentID(studentID);
+        setStudentID(event.target.value);
         console.log("Nilai student id = " + event.target.value);
     }
 
     const changePasswordHandler = (event) => {
-        setPassword(password);
+        setPassword(event.target.value);
         console.log("Nilai student id = " + event.target.value);
     }
 

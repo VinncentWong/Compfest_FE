@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import {useNavigate} from 'react-router-dom';
-import dataUser from "../Utils/DataUser";
+import axios from "../Api/AxiosConfig"
 
 const LoginPage = () => {
 
@@ -9,29 +9,31 @@ const LoginPage = () => {
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
-    const submitHandler = (event) => {
+    const submitHandler = async (event) => {
         event.preventDefault();
-        // const response = axios.post("/login", {
-        //     studentID : studentID,
-        //     studentPassword : password
-        // });
-        // if(response == null || response == undefined){
-
-        // } 
-        dataUser.push({
-            userID : 19000
-        });
-        console.log(`nilai data user = ${dataUser.at(0)["userID"]}`);
-        navigate("/home");
+        try{
+            const response = await axios.post("/login", {
+                studentNumber : studentID,
+                password : password
+            });
+            alert(response.data.map.message);
+            const stringJson = JSON.stringify(response.data)
+            localStorage.setItem("data", stringJson);
+            navigate("/home");
+        }
+        catch(err){
+            alert(err);
+            navigate("/");
+        }
     }
 
     const changeStudentIDHandler = (event) => {
-        setStudentID(studentID);
+        setStudentID(event.target.value);
         console.log("Nilai student id = " + event.target.value);
     }
 
     const changePasswordHandler = (event) => {
-        setPassword(password);
+        setPassword(event.target.value);
         console.log("Nilai student id = " + event.target.value);
     }
 
