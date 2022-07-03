@@ -1,13 +1,15 @@
 import axios from "../../Api/AxiosConfig";
 import { useState } from "react";
 import { Form, Button} from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
 const AddItem = () => {
 
     const [productName, setProductName] = useState("");
     const [price, setProductPrice] = useState("");
     const [description, setProductDescription] = useState("");
     const [image, fileExist] = useState([]);
-
+    const navigate = useNavigate();
     const productNameHandler = (event) => {
         console.log(`product name = ${event.target.value}`)
         setProductName(event.target.value);
@@ -44,11 +46,13 @@ const AddItem = () => {
             })
             console.log(`token = ${JSON.parse(localStorage.getItem("data")).map.token}`)
             alert(response.data.map.message);
+            navigate("/home")
         }
         catch(error){
             console.log("Masuk catch");
             alert(error);
             console.log("Error = " + error);
+            navigate("/home");
         }
     }
    return (

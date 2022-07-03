@@ -57,7 +57,7 @@
 
 #userid-navbar{
     position: absolute;
-    left: 87%;
+    left: 86%;
     bottom: 21px;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -66,6 +66,15 @@
 
 #additem-button{
     position: relative;
-    left: 50em;
+    left: 40em;
     top: 5px;
+}
+
+#image{
+    word-wrap: break-word;
+}
+
+#table-number{
+    position: relative;
+    left: 2%;
 }
