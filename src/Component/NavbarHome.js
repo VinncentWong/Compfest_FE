@@ -17,7 +17,7 @@ const NavbarHome = () => {
             }
             </h3>
             <img src="https://neuro.ucr.edu/sites/g/files/rcwecm2801/files/styles/form_preview/public/blank-profile-pic.png?itok=MMqjmBtg"
-            width="80px" id = "image-people"></img>
+            width="80px" id = "image-people" alt="user"></img>
         </Stack>
     );
 }
