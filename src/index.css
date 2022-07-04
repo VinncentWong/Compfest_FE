@@ -63,7 +63,7 @@
 
 #userid-navbar{
     position: absolute;
-    left: 86%;
+    left: 85%;
     bottom: 21px;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -135,5 +135,20 @@
 
 .form-buy .label-buy{
     color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link-profile{
+    position: absolute;
+    left: 78em;
+    top: 20%;
+}
+
+.account-card{
+    background-color: #00264D;
+}
+
+.form-account-text{
+    color: black;
     font-family: 'Montserrat', sans-serif;
 }

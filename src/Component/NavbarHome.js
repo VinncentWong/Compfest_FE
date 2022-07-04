@@ -45,7 +45,7 @@ const NavbarHome = ({exist}) => {
         const stringJson = JSON.stringify(response);
         console.log("string json = " + stringJson);
         localStorage.setItem("items", stringJson);
-        navigate("/items");
+        navigate("/getitems");
     }
 
     return(
@@ -61,8 +61,11 @@ const NavbarHome = ({exist}) => {
             }
             </h3>
             <BButton variant = "secondary" id = "button-get-items" onClick = {getItemsHandler}>Get Items</BButton>
-            <img src="https://neuro.ucr.edu/sites/g/files/rcwecm2801/files/styles/form_preview/public/blank-profile-pic.png?itok=MMqjmBtg"
-            width="80px" id = "image-people" alt="user"></img>
+            <a href = "/account" className = "link-profile">
+                <img src="https://neuro.ucr.edu/sites/g/files/rcwecm2801/files/styles/form_preview/public/blank-profile-pic.png?itok=MMqjmBtg"
+                width="80px" id = "image-people" alt="user">
+                </img>
+            </a>
         </Stack>
     );
 }

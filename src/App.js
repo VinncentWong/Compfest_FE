@@ -6,6 +6,7 @@ import Home from './Component/Pages/Home';
 import AddItem from './Component/Pages/AddItem';
 import SearchItemPage from './Component/Pages/SearchItem';
 import GetItem from './Component/Pages/GetItems';
+import Account from './Component/Pages/Account';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/additem" element={<AddItem></AddItem>}></Route>
         <Route path="/searchitem" element={<SearchItemPage></SearchItemPage>}></Route>
-        <Route path="/items" element={<GetItem></GetItem>}></Route>
+        <Route path="/getitems" element={<GetItem></GetItem>}></Route>
+        <Route path="/account" element={<Account></Account>}></Route>
       </Routes>
     </BrowserRouter>
   );

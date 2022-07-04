@@ -19,6 +19,7 @@ const LoginPage = () => {
             alert(response.data.map.message);
             const stringJson = JSON.stringify(response.data)
             localStorage.setItem("data", stringJson);
+            console.log("data json = " + stringJson);
             navigate("/home");
         }
         catch(err){
