@@ -6,22 +6,9 @@ const SearchItemPage = () => {
     console.log("id = " + JSON.parse(localStorage.getItem("search")).data.map.data.id);
     return(
         <div>
-            <NavbarHome></NavbarHome>
-            <TabelItem data = {JSON.parse(localStorage.getItem("search"))}></TabelItem>
+            <NavbarHome exist = {false}></NavbarHome>
+            <TabelItem data = {JSON.parse(localStorage.getItem("search"))} multiple = {false}></TabelItem>
         </div>
     )
 }
-
-// const traverseItem = () =>{
-//     return (
-//             data.map((element) => {
-//                     return(
-//                     <li key = {element.id}>
-//                         <h3>Id : {element.id}</h3>
-//                         <h3>Name : {element.name}</h3>
-//                     </li>
-//                     )
-//             })
-//     );
-// }
 export default SearchItemPage;

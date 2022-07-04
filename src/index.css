@@ -15,10 +15,16 @@
 }
 
 #signup-button{
+    position : relative;
+    top : 5%;
+    left: 50em;
     width: 90px;
 }
 
 #login-button{
+    position : relative;
+    top : 5%;
+    left: 50em;
     width: 90px;
 }
 
@@ -77,4 +83,50 @@
 #table-number{
     position: relative;
     left: 2%;
+}
+
+#button-get-items{
+    position: relative;
+    left : 28em;
+    top : 5px;
+}
+
+.table{
+    table-layout: fixed;
+}
+
+.td-index{
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.td-name{
+    word-wrap: break-word;
+}
+
+.td-description{
+    word-wrap: break-word;
+}
+
+.td-image{
+    overflow: scroll;
+}
+
+.td-price{
+    word-wrap: break-word;
+}
+
+.td-created{
+    column-span: 5px;
+    word-wrap: break-word;
+}
+
+.tr-table{
+    border: 1px solid grey;
+    max-width: fit-content;
+}
+
+.h-image{
+    width: 500px;
+    height: 300px;
 }
