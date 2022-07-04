@@ -71,9 +71,9 @@
 }
 
 #additem-button{
-    position: relative;
-    left: 40em;
-    top: 5px;
+    position: absolute;
+    left: 57em;
+    top: 35px;
 }
 
 #image{
@@ -86,17 +86,18 @@
 }
 
 #button-get-items{
-    position: relative;
-    left : 28em;
-    top : 5px;
+    position: absolute;
+    left : 64em;
+    top : 34px;
 }
 
 .table{
+    position: absolute;
     table-layout: fixed;
 }
 
 .td-index{
-    width: 100px;
+
     word-wrap: break-word;
 }
 
@@ -126,7 +127,13 @@
     max-width: fit-content;
 }
 
-.h-image{
-    width: 500px;
-    height: 300px;
+.form-buy{
+    position: absolute;
+    top: 10px;
+    left: 25em;
+}
+
+.form-buy .label-buy{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
