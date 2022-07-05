@@ -16,6 +16,7 @@ Kantin Kejujuran is a task to create a website with several cases from Compfest 
 ```
   1. "/" -> Display landing page
   2. "/signup" -> Display signup page
+  Note : User only can login with some ID pattern otherwise error would be occured
   3. "/login" -> Display login page
   4. "/home" -> Display home page +
   5. "/additem" -> Display add item page +
@@ -28,3 +29,12 @@ Kantin Kejujuran is a task to create a website with several cases from Compfest 
 #### You can access the website(only one endpoint number 1,2, and 3 and also you can't do signup or login because the current database is still local"
 #### It is recommended to do it only in local machine to access whole endpoint.
 ```Link Website Deployed = https://compfest-fe.herokuapp.com/```
+
+## Video Demo
+
+
+https://user-images.githubusercontent.com/88434717/177244452-5bb440ec-6351-451c-80af-d020674e36ed.mp4
+
+
+
+
