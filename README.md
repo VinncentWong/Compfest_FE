@@ -25,3 +25,6 @@ Kantin Kejujuran is a task to create a website with several cases from Compfest 
   
 + -> User required to successfully login to access those pages otherwise User can't access those pages.
 ```
+#### You can access the website(only one endpoint number 1,2, and 3 and also you can't do signup or login because the current database is still local"
+#### It is recommended to do it only in local machine to access whole endpoint.
+```Link Website Deployed = https://compfest-fe.herokuapp.com/```
